@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>CineBook</title>
+    <link type="image/png" sizes="96x96" rel="icon" href="../images/icons8-film-96 rel.png" />
+    <script src="https://kit.fontawesome.com/60743dca7e.js" crossorigin="anonymous"></script>
+    <meta
+      name="description"
+      content="CineBook offers shows, movie tickets, concert tickets and events nearby. Also features promotional offers and coupons."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../css/booking.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Pathway+Extreme:wght@100&family=Tektur&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-warning">
+      <a class="navbar-brand" href="../index_copy.html"><img
+        src="../images/icons8-film-96.png"
+        width="30"
+        height="30"
+        alt="CineBook Logo"
+      /> CineBook</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="../index_copy.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="movies.html">Movies</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="shows.html">Shows</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <br />
+    <div class="container mt-3">
+        <h1 id="m_title"></h1> &nbsp; &nbsp;
+        <br><br>
+        <div class="row">
+            <div class="col">
+                <center>
+                    <br><br><br>
+        <img id="img" alt="Movie Poster" class="sms" width="300" length="500">
+    <br><br>
+        </center>
+            </div>
+            <div class="col">
+                <div class="flex-container">
+                    <p>Mon 26 Jun</p>
+        <a  class="btn btn-warning" onclick="storer()"><b>09:30 AM</b></a>
+        <a   class="btn btn-warning" onclick="storer()"><b>13:30 PM</b></a>
+        <a   class="btn btn-warning" onclick="storer()"><b>17:30 PM</b></a>
+        <a   class="btn btn-warning marg" onclick="storer()"><b>22:00 PM</b></a> 
+        <br><br> 
+        <p>Tue 27 Jun</p>
+        <a   class="btn btn-warning" onclick="storer()"><b>08:30 AM</b></a>
+        <a   class="btn btn-warning" onclick="storer()"><b>10:30 PM</b></a>
+        <a   class="btn btn-warning" onclick="storer()"><b>17:30 PM</b></a>
+        <a   class="btn btn-warning marg" onclick="storer()"><b>22:00 PM</b></a>  
+        <br><br> 
+        <p>Wed 28 Jun</p>
+        <a   class="btn btn-warning" onclick="storer()"><b>09:30 AM</b></a>
+        <a   class="btn btn-warning" onclick="storer()"><b>13:30 PM</b></a>
+        <a   class="btn btn-warning" onclick="storer()"><b>23:30 PM</b></a>  
+        <br><br> 
+        <p>Thu 29 Jun</p>
+        <a   class="btn btn-warning" onclick="storer()"><b>09:30 AM</b></a>
+        <a   class="btn btn-warning" onclick="storer()"><b>13:30 PM</b></a>
+        <a   class="btn btn-warning" onclick="storer()"><b>15:00 PM</b></a>
+        <a   class="btn btn-warning marg" onclick="storer()"><b>17:30 PM</b></a>  
+        <br><br> 
+        <p>Fri 30 Jun</p>
+        <a   class="btn btn-warning"><b>11:00 AM</b></a>
+      </div>
+    </div>
+            </div>
+        </div>
+        <br><br><br><br><br><br>
+    <footer>
+      <div class="container">
+        <img
+          src="../images/icons8-film-96.png"
+          width="15"
+          height="15"
+          alt="CineBook Logo"
+        />
+        <p>CineBook</p>
+        <h6>
+          Contact Us: <i class="fa fa-envelope"></i>&nbsp;<a
+            href="mailto:cinebook@example.com"
+            >cinebook@example.com</a
+          >
+        </h6>
+        <em>CineBook copyright © 2023 all rights reserved</em>
+      </div>
+      <br>
+    </footer>
+    <script>
+      window.onload=function(){
+        var show=localStorage.getItem("b_value");
+        document.getElementById("m_title").innerHTML="Book tickets for: "+show;
+        if(show==="The Little Mermaid"){
+          document.getElementById("img").src = "../images/tlm.jpg";
+        }
+        else if(show=="Adipurush"){
+          document.getElementById("img").src = "../images/adp.jpg";
+        }
+        else if(show=="Zara Hatke Zara Bachke"){
+          document.getElementById("img").src = "../images/zhzb.jpg";
+        }
+        else if(show=="Transformers"){
+          document.getElementById("img").src = "../images/transformers.jpg";
+        }
+        else if(show=="R to V"){
+          document.getElementById("img").src = "../images/rtov.jpeg";
+        }
+        else if(show=="EXplOration"){
+          document.getElementById("img").src = "../images/exo.jpg";
+        }
+        else if(show=="Born Pink"){
+          document.getElementById("img").src = "../images/bornpink.jpeg";
+        }
+        else if(show=="IVE - The Prom Queens"){
+          document.getElementById("img").src = "../images/ive.jpg";
+        }
+        else if(show=="FATE"){
+          document.getElementById("img").src = "../images/enhypen.jpeg";
+        }
+        else if(show=="NCT - Neo City"){
+          document.getElementById("img").src = "../images/nct.jpeg";
+        }
+        else if(show=="Maniac"){
+          document.getElementById("img").src = "../images/skz.jpg";
+        }
+        else if(show=="READY TO BE"){
+          document.getElementById("img").src = "../images/twice.jpg";
+        }
+        else if(show=="Spider-Man: Into the Spider-Verse"){
+          document.getElementById("img").src = "../images/spiderman.jpg";
+        }
+        else if(show=="The Flash"){
+          document.getElementById("img").src = "../images/flash.jpg";
+        }
+        else if(show=="Guardians of the Galaxy"){
+          document.getElementById("img").src = "../images/gog.jpg";
+        }
+        else if(show=="Indiana Jones and the Dial of Destiny"){
+          document.getElementById("img").src = "../images/indiana_jones.jpg";
+        }
+      }
+      var val;
+      function storer(){
+        btn_val=document.querySelectorAll(".btn-warning");
+        btn_val.forEach(bt=>{
+          bt.addEventListener('click', (e)=>{
+            val=e.target.innerHTML;
+            localStorage.setItem("show_time", val);
+            window.location.assign("seats.html");
+          });
+        });
+        
+      }
+      
+      
+
+      
+    </script>
+    <script src="../main.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

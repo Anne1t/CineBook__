@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+*{
+  font-family: 'Montserrat', sans-serif;
+  box-sizing: border-box
+}
+
+#greeting{
+  text-transform: capitalize;
+}
+
+.item {
+  height: 400px;
+  width: 800px;
+}
+ 
+.carousel {
+  transition: transform .2s; /* Animation */
+  display: block;
+}
+
+.carousel:hover {
+  transform: scale(1.02);
+}
+
+/*Designing the 'suggested movies'*/
+.sms {
+  height: 400px;
+  width: 250px;
+  border-radius: 10px;
+  transition: transform .2s;
+  /* Animation */
+}
+
+.sms:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+/*footer*/
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color: #FFC107;
+  color: rgb(81, 80, 80);
+}
+
+@media only screen and (max-width:991px){
+  .sms{
+    margin-top: 10px;
+  }
+
+  .col{
+    text-align: center;
+  }
+}
+   

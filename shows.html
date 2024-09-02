@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>CineBook - Book Shows</title>
+    <link type="image/png" sizes="96x96" rel="icon" href="../images/icons8-film-96 rel.png" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../css/movies_shows.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Pathway+Extreme:wght@100&family=Tektur&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-warning">
+      <a class="navbar-brand" href="../index_copy.html"><img
+        src="../images/icons8-film-96.png"
+        width="30"
+        height="30"
+        alt="CineBook Logo"
+      /> CineBook</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="../index_copy.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="movies.html">Movies</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="shows.html">Shows <span class="sr-only">(current)</span></a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" placeholder="Search" id="s_input">
+          <button class="btn btn-outline-dark my-2 my-sm-0" type="button" id="query">Search</button>
+        </form>
+      </div>
+    </nav>
+    <div class="container">
+      <br />
+      <h2>Shows & Concerts</h2>
+      <br />
+      <div class="row" id="row1">
+        <div class="col">
+          <img
+            data-toggle="modal"
+            data-target="#modal"
+            src="../images/rtov.jpeg"
+            alt="R to V"
+            class="sms"
+            onclick="submitValue('R to V', 'Red Velvet 4th Concert R to V is the fourth concert tour of the global South Korean girl group Red Velvet, in support of their 2022 EPs The ReVe Festival 2022 - Feel My Rhythm and The ReVe Festival 2022 - Birthday.')"
+          />
+          &nbsp;
+          <img
+            data-toggle="modal"
+            data-target="#modal"
+            src="../images/exo.jpg"
+            alt="EXplOration"
+            class="sms"
+            onclick="submitValue('EXplOration', 'Exo Planet #5 - Exploration is the fourth live album by global South Korean-Chinese boy band Exo.')"
+          />
+          &nbsp;
+          <img
+            data-toggle="modal"
+            data-target="#modal"
+            src="../images/bornpink.jpeg"
+            alt="Born Pink"
+            class="sms"
+            onclick="submitValue('Born Pink', 'Born Pink World Tour is the ongoing second worldwide concert tour by South Korean girl group Blackpink in support of their second Korean studio album Born Pink. The tour began on October 15, 2022, in Seoul, South Korea and is set to conclude on August 26, 2023, in Los Angeles, United States. Upon conclusion, the tour will havevisited 21 countries in four continents.')"
+          />
+          &nbsp;
+          <img
+            data-toggle="modal"
+            data-target="#modal"
+            src="../images/ive.jpg"
+            alt="IVE"
+            class="sms"
+            onclick="submitValue('IVE - The Prom Queens', 'IVE: The 1st Fan Concert The Prom Queens is the first fan concert held by IVE. The first show will be held at the Olympic Hall in Olympic Park in Seoul, South Korea. The concert will be simultaneously streamed online via Beyond LIVE.')"
+          />
+          &nbsp; <br /><br /> <div id="row2">
+          <img
+            data-toggle="modal"
+            data-target="#modal"
+            src="../images/enhypen.jpeg"
+            alt="Enhypen"
+            class="sms"
+            onclick="submitValue('FATE', 'ENHYPEN is set for an international tour this summer with shows taking place in South Korea, Japan, and the United States. A two-night concert in  KSPO Dome, Seoul will kick off the trek in July, according to their announcement on Tuesday. The septet will then head to Japan to perform at the Kyocera Dome Osaka for two nights, before another two nights at the Tokyo Dome. ENHYPEN will embark on their seven-date tour of the U.S. in the fall, starting at Dignity Health Sports Park, LA in October. The band will then head to Glendale, Houston, Dallas, and Newark before landing in Chicago to play at United Center, Illnois. More dates are soon to come.')"
+          />
+          &nbsp;
+          <img
+            data-toggle="modal"
+            data-target="#modal"
+            src="../images/nct.jpeg"
+            alt="NCT"
+            class="sms"
+            onclick="submitValue('NCT - Neo City', 'Neo City - The Link is the second concert tour headlined by NCT 127, the Seoul-based sub-unit of South Korean boy group NCT, in support of their third studio album Sticker and fourth studio album 2 Baddies.')"
+          />
+          &nbsp;
+          <img
+            data-toggle="modal"
+            data-target="#modal"
+            src="../images/skz.jpg"
+            alt="Stray Kids"
+            class="sms"
+            onclick="submitValue('Maniac', 'The Maniac World Tour, officially Stray Kids 2nd World Tour Maniac, is the second concert tour by South Korean boy band Stray Kids in support of their 2022 extended plays Oddinary, Circus and Maxident and 2023 album The Sound. The group is scheduled 42 shows across Asia, North America, and Australia.')"
+          />
+          &nbsp;
+          <img
+            data-toggle="modal"
+            data-target="#modal"
+            src="../images/twice.jpg"
+            alt="Twice"
+            class="sms"
+            onclick="submitValue('READY TO BE', 'Twice 5th World Tour Ready to Be is the third worldwide concert tour and the fifth overall concert headlined by South Korean girl group Twice, in support of their twelfth extended play Ready to Be.')"
+          />
+          &nbsp;
+        </div>
+        </div>
+      </div>
+    </div>
+    <br />
+    <!--Modal-->
+    <div id="modal" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header bg-warning">
+            <h4 class="modal-title" id="title"></h4>
+            <button type="button" class="close" data-dismiss="modal">
+              &times;
+            </button>
+          </div>
+          <div class="modal-body">
+            <p id="desc"></p>
+          </div>
+          <div class="modal-footer">
+            <a href="booking.html"><button type="button" class="btn btn-default">Book Tickets
+            </button></a>
+            <button type="button" class="btn btn-default" data-dismiss="modal">
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="container">
+        <img
+          src="../images/icons8-film-96.png"
+          width="15"
+          height="15"
+          alt="CineBook Logo"
+        />
+        <p>CineBook</p>
+        <h6>
+          Contact Us: <i class="fa fa-envelope"></i>&nbsp;<a
+            href="mailto: cinebook@example.com"
+            >cinebook@example.com</a
+          >
+        </h6>
+        <em>CineBook copyright © 2023 all rights reserved</em>
+      </div>
+      <br>
+    </footer>
+    <script>
+       var items = [
+      { text: "The Little Mermaid", id: "row1" },
+      { text: "Adipurush", id: "row1" },
+      { text: "Zara Hatke Zara Bachke", id: "row1" },
+      { text: "TRANSFORMERS: Rise of the Beasts", id: "row1" },
+      { text: "Spiderman: Into the Spider-Verse", id: "row2" },
+      { text: "The Flash", id: "row2" },
+      { text: "Guardians of the Galaxy", id: "row2" },
+      { text: "Indianna Jones and the Dial of History", id: "row2" }
+  ];
+  
+  function submitValue(x, y){
+        localStorage.setItem("b_value", x);
+        localStorage.setItem("des", y);
+        show=localStorage.getItem("b_value");
+        description=localStorage.getItem("des");
+        document.getElementById("title").innerHTML=show;
+        document.getElementById("desc").innerHTML=description;
+      }
+
+      searchButton = document.getElementById("query"),
+      searchText   = document.getElementById("s_input");
+
+
+      function searchForItem(query) {
+        for (var i = 0; i < items.length; i++) {
+          if (items[i].text.indexOf(query) !== -1) {
+            return document.getElementById(items[i].id);
+          }
+        }
+      }
+
+      searchButton.addEventListener('click', function () {
+        var query = searchText.value,
+        item  = searchForItem(query);
+        if (typeof item !== "undefined") {
+          item.scrollIntoView();
+        }
+      });
+    </script>
+    <script src="" async defer></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://kit.fontawesome.com/60743dca7e.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmed!</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Pathway+Extreme:wght@100&family=Tektur&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div style="margin-top: 300px; font-family: Arial, Helvetica, sans-serif;text-align:center; ">
+        <h1>Thank you! Your booking has been confirmed &nbsp;<i class="fa-solid fa-circle-check" style="color: #3dcc00;"></i></h1></h1>
+        <p>This page will redirect home in <span id="timer"></span> seconds.</p>
+    </div>
+    <script>
+        n=5;
+        function timer() {
+            if(n >= 0){
+                document.getElementById("timer").innerHTML = n--;
+                setTimeout("timer()", 1000);
+            }
+            else{
+                window.location.href = "../index_copy.html";
+            }
+        }
+        timer();
+        window.history.forward();
+    </script>
+</body>
+</html>

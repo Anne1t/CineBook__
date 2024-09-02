@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+*{
+  font-family: 'Montserrat', sans-serif;
+}
+.sms {
+    height: 400px;
+    width: 250px;
+    border-radius: 10px;
+  }
+
+  /*footer*/
+footer {
+    text-align: center;
+    padding: 3px;
+    background-color: #FFC107;
+    color: rgb(81, 80, 80);
+  }
+
+  @media only screen and (max-width:991px){
+    .marg{
+      margin-top: 10px;
+    }
+  }
+
+  @media only screen and (min-width:390px){
+    .btn-warning{
+      margin-top: 10px;
+    }
+  }
